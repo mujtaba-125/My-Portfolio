@@ -1,0 +1,74 @@
+site_name: World of Data by Mujtaba Rasheed Malik
+site_description: A personal portfolio showcasing my projects and skills.
+site_author: Mujtaba Rasheed
+
+nav:
+  - Home: index.md
+  - Projects:
+      - Project 1: projects/project1.md
+      - Project 2: projects/project2.md
+      - Project 3: projects/project3.md
+  - Skills: skills.md
+  - Resume: Resume.md
+  - Contact: contact.md
+  - Blog: blog.md
+  - About: About.md
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs.sticky
+    - navigation.tabs.autoscroll
+    - navigation.tabs.stretch
+    - navigation.tabs.underline
+    - navigation.tabs.underline.auto
+    - navigation.tabs.underline.indicator
+    - navigation.tabs.underline.indicator.auto
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - content.tabs.link
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-username
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/your-profile
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/your-handle
+
+repo_url: https://github.com/your-username/your-repo
+repo_name: GitHub
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
